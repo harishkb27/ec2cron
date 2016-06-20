@@ -1,0 +1,19 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+
+platforms:
+  - name: ubuntu-14.04
+  - name: ubuntu-15.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[test::create_profile]
+      - recipe[test::delete_profile]
+      - recipe[test::schedule]
+    attributes:

@@ -1,0 +1,28 @@
+sudo: required
+dist: trusty
+
+language: ruby
+rvm:
+  - 2.1
+
+# install the pre-release chef-dk.  Use chef-stable-precise to install the stable release
+addons:
+  apt:
+    sources:
+      - chef-current-precise
+    packages:
+      - chefdk
+
+install:
+  - bundle install
+
+services: docker
+
+before_script:
+  - eval "$(/opt/chefdk/bin/chef shell-init bash)"
+  - /opt/chefdk/embedded/bin/chef gem install kitchen-docker
+
+script:
+  - /opt/chefdk/embedded/bin/chef --version
+  - cd test/cookbooks/test
+  - /opt/chefdk/embedded/bin/rspec
