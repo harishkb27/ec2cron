@@ -1,0 +1,5 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+cookbook('ec2cron', path: '../../../../ec2cron')
