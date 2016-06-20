@@ -19,7 +19,7 @@ Provides resources for scheduling ec2 instances to start and stop at pre-defined
 
 ## Usage
 
-This cookbook makes it really easy to manage the scheduling of aws ec2 instances. It provides custom resources to install and manage the aws command line interface and profiles associated with the same. Built upon the cron chef resource, the actions(start/stop) can be defined to run at specific times using the custom resources of this cookbook. The best way to understand the usage is to look at the test cookbook at [test/cookbooks/test/recipes]().
+This cookbook makes it really easy to manage the scheduling of aws ec2 instances. It provides custom resources to install and manage the aws command line interface and profiles associated with the same. Built upon the cron chef resource, the actions(start/stop) can be defined to run at specific times using the custom resources of this cookbook. The best way to understand the usage is to look at the test cookbook at [test/cookbooks/test/recipes](https://github.com/harishkb27/ec2cron/tree/master/test/cookbooks/test/recipes).
 
 ## Recipes
 
@@ -116,11 +116,11 @@ end
 
 ### Unit testing
 
-Custom matchers have been exposed for the resources described above. You can use the apis in your unit tests. Find an implementation of ec2cron [Chefspec](https://github.com/sethvargo/chefspec) unit tests in [test/cookbooks/test/spec/unit/recipes/]().
+Custom matchers have been exposed for the resources described above. You can use the apis in your unit tests. Find an implementation of ec2cron [Chefspec](https://github.com/sethvargo/chefspec) unit tests in [test/cookbooks/test/spec/unit/recipes/](https://github.com/harishkb27/ec2cron/tree/master/test/cookbooks/test/spec/unit/recipes).
 
 ### Integration testing
 
-An implementation of [Serverspec](http://serverspec.org) integration testing of resources managed by ec2cron cookbook can be found at [test/integration/default/serverspec/default_spec.rb]()
+An implementation of [Serverspec](http://serverspec.org) integration testing of resources managed by ec2cron cookbook can be found at [test/integration/default/serverspec/default_spec.rb](https://github.com/harishkb27/ec2cron/blob/master/test/integration/default/serverspec/default_spec.rb)
 
 ## License & Authors
 
