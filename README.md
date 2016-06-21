@@ -1,6 +1,7 @@
 # ec2cron Cookbook
 
 [![Build Status](https://travis-ci.org/harishkb27/ec2cron.svg?branch=master)](https://travis-ci.org/harishkb27/ec2cron)
+[![Cookbook Version](https://img.shields.io/cookbook/v/ec2cron.svg)](https://supermarket.chef.io/cookbooks/ec2cron)
 
 
 Provides resources for scheduling ec2 instances to start and stop at pre-defined intervals. Installs AWS cli and manages user profiles as per different security credentials.
