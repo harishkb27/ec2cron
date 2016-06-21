@@ -25,4 +25,3 @@ script:
   - /opt/chefdk/embedded/bin/chef --version
   - cd test/cookbooks/test
   - /opt/chefdk/embedded/bin/rspec
-  - kitchen test
